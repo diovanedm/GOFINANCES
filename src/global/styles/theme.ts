@@ -14,6 +14,7 @@ export default {
     shape: '#FFFFFF',
     title: '#363f5f',
     text: '#969cb2',
+    text_dark: '#363F5F',
     background: '#F0F2F5',
   },
   fonts: {
