@@ -1,26 +1,26 @@
-import React from 'react';
-import AppLoading from 'expo-app-loading';
-import { ThemeProvider } from 'styled-components';
+import React from "react";
+import AppLoading from "expo-app-loading";
+import { ThemeProvider } from "styled-components";
 
-import { 
+import {
   useFonts,
   Poppins_400Regular,
-  Poppins_500Medium ,
-  Poppins_700Bold 
-} from '@expo-google-fonts/poppins';
+  Poppins_500Medium,
+  Poppins_700Bold,
+} from "@expo-google-fonts/poppins";
 
-import theme from './src/global/styles/theme';
-import { Register } from './src/screens/Register';
+import theme from "./src/global/styles/theme";
+import { Register } from "./src/screens/Register";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
-    Poppins_500Medium ,
-    Poppins_700Bold 
+    Poppins_500Medium,
+    Poppins_700Bold,
   });
 
-  if(!fontsLoaded) {
-    return <AppLoading />
+  if (!fontsLoaded) {
+    return <AppLoading />;
   }
 
   return (
@@ -29,4 +29,3 @@ export default function App() {
     </ThemeProvider>
   );
 }
-
